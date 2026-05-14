@@ -1,5 +1,6 @@
 import { BrandMarquee } from "@/components/landing/brand-marquee";
 import { ContactSection } from "@/components/landing/contact-section";
+import { FloatingWhatsapp } from "@/components/landing/floating-whatsapp";
 import { Footer } from "@/components/landing/footer";
 import { Header } from "@/components/landing/header";
 import { Hero } from "@/components/landing/hero";
@@ -16,6 +17,7 @@ export function LandingPage() {
         <ContactSection />
       </main>
       <Footer />
+      <FloatingWhatsapp />
     </div>
   );
 }
