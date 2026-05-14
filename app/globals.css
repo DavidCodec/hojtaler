@@ -16,6 +16,11 @@
   --scrollbar-track: #18181b;
   --scrollbar-thumb: #3f3f46;
   --scrollbar-thumb-hover: #52525b;
+  color-scheme: dark;
+}
+
+html.light {
+  color-scheme: light;
 }
 
 @theme inline {
@@ -26,6 +31,7 @@
 }
 
 html {
+  height: 100%;
   scroll-behavior: smooth;
 }
 
