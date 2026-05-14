@@ -12,6 +12,7 @@ import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { Link } from "@/i18n/navigation";
 import { LocaleSwitcher } from "@/components/landing/locale-switcher";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { SITE } from "@/lib/site-config";
 
 export function Header() {
@@ -38,7 +39,7 @@ export function Header() {
       transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
       className={`fixed inset-x-0 top-0 z-50 border-b transition-colors duration-300 ${
         scrolled
-          ? "border-zinc-800/90 bg-zinc-950/85 backdrop-blur-md"
+          ? "border-zinc-200/90 bg-white/90 backdrop-blur-md dark:border-zinc-800/90 dark:bg-zinc-950/90"
           : "border-transparent bg-transparent"
       }`}
     >
@@ -49,45 +50,46 @@ export function Header() {
             alt={SITE.name}
             width={40}
             height={40}
-            className="h-9 w-9 shrink-0 rounded-md object-contain"
+            className="h-9 w-9 shrink-0 rounded-md object-contain dark:brightness-0 dark:invert"
             priority
           />
-          <span className="hidden truncate text-sm font-medium tracking-[0.18em] text-zinc-400 sm:inline">
+          <span className="hidden truncate text-sm font-medium tracking-[0.18em] text-zinc-600 dark:text-zinc-400 sm:inline">
             {SITE.name}
           </span>
         </Link>
 
-      <div className="flex items-center gap-2 sm:gap-3">
-        <nav className="hidden items-center gap-8 lg:gap-10 md:flex">
-          {nav.map((item) => (
+        <div className="flex items-center gap-2 sm:gap-3">
+          <nav className="hidden items-center gap-8 lg:gap-10 md:flex">
+            {nav.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="text-sm text-zinc-600 transition-colors hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+              >
+                {item.label}
+              </Link>
+            ))}
             <Link
-              key={item.href}
-              href={item.href}
-              className="text-sm text-zinc-400 transition-colors hover:text-zinc-100"
+              href="/#contacto"
+              className="rounded-md border border-zinc-800 bg-zinc-900 px-4 py-2 text-sm font-medium text-zinc-50 transition-colors hover:bg-zinc-800 dark:border-zinc-600 dark:bg-zinc-100 dark:text-zinc-950 dark:hover:bg-white"
             >
-              {item.label}
+              {tHeader("ctaAdvisor")}
             </Link>
-          ))}
-          <Link
-            href="/#contacto"
-            className="rounded-md border border-zinc-600 bg-zinc-100 px-4 py-2 text-sm font-medium text-zinc-950 transition-colors hover:bg-white"
+          </nav>
+
+          <LocaleSwitcher />
+          <ThemeToggle />
+
+          <button
+            type="button"
+            className="inline-flex rounded-md border border-zinc-300 p-2 text-zinc-800 dark:border-zinc-700 dark:text-zinc-200 md:hidden"
+            aria-expanded={open}
+            aria-label={open ? tHeader("menuClose") : tHeader("menuOpen")}
+            onClick={() => setOpen((v) => !v)}
           >
-            {tHeader("ctaAdvisor")}
-          </Link>
-        </nav>
-
-        <LocaleSwitcher />
-
-        <button
-          type="button"
-          className="inline-flex rounded-md border border-zinc-700 p-2 text-zinc-200 md:hidden"
-          aria-expanded={open}
-          aria-label={open ? tHeader("menuClose") : tHeader("menuOpen")}
-          onClick={() => setOpen((v) => !v)}
-        >
-          {open ? <X className="size-5" /> : <Menu className="size-5" />}
-        </button>
-      </div>
+            {open ? <X className="size-5" /> : <Menu className="size-5" />}
+          </button>
+        </div>
       </div>
 
       <AnimatePresence>
@@ -97,14 +99,14 @@ export function Header() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
-            className="overflow-hidden border-t border-zinc-800 bg-zinc-950/95 backdrop-blur-md md:hidden"
+            className="overflow-hidden border-t border-zinc-200 bg-white/95 backdrop-blur-md dark:border-zinc-800 dark:bg-zinc-950/95 md:hidden"
           >
             <div className="flex flex-col gap-1 px-4 py-4">
               {nav.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="rounded-md px-3 py-2 text-sm text-zinc-300 hover:bg-zinc-900"
+                  className="rounded-md px-3 py-2 text-sm text-zinc-700 hover:bg-zinc-100 dark:text-zinc-300 dark:hover:bg-zinc-900"
                   onClick={() => setOpen(false)}
                 >
                   {item.label}
@@ -112,7 +114,7 @@ export function Header() {
               ))}
               <Link
                 href="/#contacto"
-                className="mt-2 rounded-md bg-zinc-100 px-3 py-2 text-center text-sm font-medium text-zinc-950"
+                className="mt-2 rounded-md border border-zinc-800 bg-zinc-900 px-3 py-2 text-center text-sm font-medium text-zinc-50 dark:border-zinc-600 dark:bg-zinc-100 dark:text-zinc-950"
                 onClick={() => setOpen(false)}
               >
                 {tHeader("ctaAdvisor")}

@@ -20,6 +20,11 @@
     "open": "Choose language",
     "current": "Current language"
   },
+  "theme": {
+    "toggle": "Switch between light and dark mode",
+    "useLight": "Use light mode",
+    "useDark": "Use dark mode"
+  },
   "hero": {
     "badge": "Professional audio · B2B",
     "title": "Wholesale distributor for South America representing leading professional audio brands",

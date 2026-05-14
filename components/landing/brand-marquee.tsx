@@ -11,17 +11,17 @@ export function BrandMarquee() {
   return (
     <section
       id="marcas"
-      className="scroll-mt-24 border-y border-zinc-800/80 bg-zinc-900/40 py-10"
+      className="scroll-mt-24 border-y border-zinc-200/90 bg-zinc-100/80 py-10 dark:border-zinc-800/80 dark:bg-zinc-900/40"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <p className="mb-8 text-center text-xs font-medium uppercase tracking-[0.25em] text-zinc-500">
+        <p className="mb-8 text-center text-xs font-medium uppercase tracking-[0.25em] text-zinc-500 dark:text-zinc-500">
           {t("title")}
         </p>
       </div>
 
       <div className="relative overflow-hidden">
-        <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-24 bg-gradient-to-r from-zinc-950 to-transparent" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-24 bg-gradient-to-l from-zinc-950 to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-24 bg-gradient-to-r from-zinc-50 to-transparent dark:from-zinc-950" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-24 bg-gradient-to-l from-zinc-50 to-transparent dark:from-zinc-950" />
 
         <motion.div
           className="flex w-max items-center gap-x-16 gap-y-6 pr-16"
@@ -38,7 +38,7 @@ export function BrandMarquee() {
           {labels.map((name, i) => (
             <span
               key={`${name}-${i}`}
-              className="shrink-0 text-xl font-semibold tracking-[0.22em] text-zinc-500 sm:text-2xl"
+              className="shrink-0 text-xl font-semibold tracking-[0.22em] text-zinc-400 dark:text-zinc-500 sm:text-2xl"
             >
               {name}
             </span>
@@ -46,7 +46,7 @@ export function BrandMarquee() {
         </motion.div>
       </div>
 
-      <p className="mx-auto mt-8 max-w-2xl px-4 text-center text-sm text-zinc-500 sm:px-6">
+      <p className="mx-auto mt-8 max-w-2xl px-4 text-center text-sm text-zinc-600 dark:text-zinc-500 sm:px-6">
         {t("footnote")}
       </p>
     </section>

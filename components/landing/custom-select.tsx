@@ -124,15 +124,15 @@ export function CustomSelect({
         aria-labelledby={ariaLabelledBy}
         onClick={() => setOpen((o) => !o)}
         onKeyDown={onTriggerKeyDown}
-        className={`flex w-full items-center justify-between gap-2 rounded-md border border-zinc-800 bg-zinc-900/80 px-3 py-2.5 text-left text-sm outline-none ring-zinc-500/40 transition-shadow hover:border-zinc-700 focus-visible:ring-2 ${
-          open ? "border-zinc-600 ring-2 ring-zinc-500/40" : ""
+        className={`flex w-full items-center justify-between gap-2 rounded-md border border-zinc-200 bg-white px-3 py-2.5 text-left text-sm outline-none ring-zinc-400/40 transition-shadow hover:border-zinc-300 focus-visible:ring-2 dark:border-zinc-800 dark:bg-zinc-900/80 dark:ring-zinc-500/40 dark:hover:border-zinc-700 ${
+          open ? "border-zinc-400 ring-2 ring-zinc-400/50 dark:border-zinc-600 dark:ring-zinc-500/40" : ""
         }`}
       >
-        <span className={showMuted ? "text-zinc-600" : "text-zinc-100"}>
+        <span className={showMuted ? "text-zinc-500 dark:text-zinc-600" : "text-zinc-900 dark:text-zinc-100"}>
           {triggerLabel}
         </span>
         <ChevronDown
-          className={`size-4 shrink-0 text-zinc-500 transition-transform duration-200 ${
+          className={`size-4 shrink-0 text-zinc-500 transition-transform duration-200 dark:text-zinc-500 ${
             open ? "rotate-180" : ""
           }`}
           aria-hidden
@@ -151,7 +151,7 @@ export function CustomSelect({
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -4 }}
             transition={{ duration: 0.18, ease: [0.22, 1, 0.36, 1] as const }}
-            className="absolute z-50 mt-1.5 max-h-56 w-full overflow-auto rounded-md border border-zinc-800 bg-zinc-900 py-1 shadow-lg shadow-black/40 ring-1 ring-zinc-800/80"
+            className="absolute z-50 mt-1.5 max-h-56 w-full overflow-auto rounded-md border border-zinc-200 bg-white py-1 shadow-lg shadow-black/10 ring-1 ring-zinc-200/80 dark:border-zinc-800 dark:bg-zinc-900 dark:shadow-black/40 dark:ring-zinc-800/80"
           >
             {options.map((opt, i) => {
               const selected = value === opt.value;
@@ -165,15 +165,17 @@ export function CustomSelect({
                   role="option"
                   aria-selected={selected}
                   className={`flex cursor-pointer items-center justify-between gap-2 px-3 py-2.5 text-sm transition-colors ${
-                    active ? "bg-zinc-800/80 text-zinc-50" : "text-zinc-300"
-                  } ${selected && !active ? "text-zinc-100" : ""}`}
+                    active
+                      ? "bg-zinc-100 text-zinc-900 dark:bg-zinc-800/80 dark:text-zinc-50"
+                      : "text-zinc-700 dark:text-zinc-300"
+                  } ${selected && !active ? "text-zinc-900 dark:text-zinc-100" : ""}`}
                   onMouseEnter={() => setHighlighted(i)}
                   onMouseDown={(e) => e.preventDefault()}
                   onClick={() => selectIndex(i)}
                 >
                   <span>{opt.label}</span>
                   {selected ? (
-                    <Check className="size-4 shrink-0 text-zinc-400" aria-hidden />
+                    <Check className="size-4 shrink-0 text-zinc-500 dark:text-zinc-400" aria-hidden />
                   ) : (
                     <span className="size-4 shrink-0" aria-hidden />
                   )}

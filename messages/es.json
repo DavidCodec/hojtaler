@@ -20,6 +20,11 @@
     "open": "Elegir idioma",
     "current": "Idioma actual"
   },
+  "theme": {
+    "toggle": "Cambiar entre modo claro y oscuro",
+    "useLight": "Activar modo claro",
+    "useDark": "Activar modo oscuro"
+  },
   "hero": {
     "badge": "Audio profesional · B2B",
     "title": "Distribuidor mayorista para Suramérica de marcas líderes en audio profesional",

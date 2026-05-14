@@ -58,11 +58,11 @@ export function LocaleSwitcher() {
         aria-haspopup="listbox"
         aria-controls={listboxId}
         onClick={() => setOpen((v) => !v)}
-        className={`flex items-center gap-2 rounded-md border border-zinc-700 bg-zinc-900/60 px-2.5 py-2 text-xs font-medium text-zinc-200 outline-none ring-zinc-500/40 transition-colors hover:border-zinc-600 hover:bg-zinc-800/80 focus-visible:ring-2 ${
-          open ? "border-zinc-500 ring-2 ring-zinc-500/40" : ""
+        className={`flex items-center gap-2 rounded-md border border-zinc-200 bg-white px-2.5 py-2 text-xs font-medium text-zinc-800 outline-none ring-zinc-400/40 transition-colors hover:border-zinc-300 hover:bg-zinc-50 focus-visible:ring-2 dark:border-zinc-700 dark:bg-zinc-900/60 dark:text-zinc-200 dark:ring-zinc-500/40 dark:hover:border-zinc-600 dark:hover:bg-zinc-800/80 ${
+          open ? "border-zinc-400 ring-2 ring-zinc-400/50 dark:border-zinc-500 dark:ring-zinc-500/40" : ""
         }`}
       >
-        <Languages className="size-4 shrink-0 text-zinc-400" aria-hidden />
+        <Languages className="size-4 shrink-0 text-zinc-500 dark:text-zinc-400" aria-hidden />
         <span className="tabular-nums tracking-wide">
           {shortLabel[locale] ?? locale.toUpperCase()}
         </span>
@@ -83,7 +83,7 @@ export function LocaleSwitcher() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -4 }}
             transition={{ duration: 0.18, ease: [0.22, 1, 0.36, 1] as const }}
-            className="absolute right-0 z-[60] mt-1.5 min-w-[10rem] overflow-hidden rounded-md border border-zinc-800 bg-zinc-900 py-1 shadow-lg shadow-black/40 ring-1 ring-zinc-800/80"
+            className="absolute right-0 z-[60] mt-1.5 min-w-[10rem] overflow-hidden rounded-md border border-zinc-200 bg-white py-1 shadow-lg shadow-black/10 ring-1 ring-zinc-200/80 dark:border-zinc-800 dark:bg-zinc-900 dark:shadow-black/40 dark:ring-zinc-800/80"
           >
             {routing.locales.map((loc) => {
               const active = loc === locale;
@@ -93,15 +93,15 @@ export function LocaleSwitcher() {
                     type="button"
                     role="option"
                     aria-selected={active}
-                    className={`flex w-full items-center justify-between gap-3 px-3 py-2 text-left text-sm transition-colors hover:bg-zinc-800/80 ${
-                      active ? "text-zinc-50" : "text-zinc-300"
+                    className={`flex w-full items-center justify-between gap-3 px-3 py-2 text-left text-sm transition-colors hover:bg-zinc-100 dark:hover:bg-zinc-800/80 ${
+                      active ? "text-zinc-900 dark:text-zinc-50" : "text-zinc-700 dark:text-zinc-300"
                     }`}
                     onMouseDown={(e) => e.preventDefault()}
                     onClick={() => switchTo(loc)}
                   >
                     <span>{t(loc as "es" | "en")}</span>
                     {active ? (
-                      <Check className="size-4 shrink-0 text-zinc-400" aria-hidden />
+                      <Check className="size-4 shrink-0 text-zinc-500 dark:text-zinc-400" aria-hidden />
                     ) : (
                       <span className="size-4 shrink-0" aria-hidden />
                     )}

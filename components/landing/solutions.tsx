@@ -63,10 +63,10 @@ export function Solutions() {
           transition={{ duration: 0.45 }}
           className="max-w-2xl"
         >
-          <h2 className="text-2xl font-semibold tracking-tight text-zinc-50 sm:text-3xl">
+          <h2 className="text-2xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-3xl">
             {t("title")}
           </h2>
-          <p className="mt-3 text-sm leading-relaxed text-zinc-400 sm:text-base">
+          <p className="mt-3 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400 sm:text-base">
             {t("lead")}
           </p>
         </motion.div>
@@ -84,17 +84,17 @@ export function Solutions() {
               <motion.li
                 key={key}
                 variants={itemMotion}
-                className="rounded-lg border border-zinc-800 bg-zinc-900/35 p-5 transition-colors hover:border-zinc-700"
+                className="rounded-lg border border-zinc-200 bg-white/80 p-5 transition-colors hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900/35 dark:hover:border-zinc-700"
               >
                 <div className="flex items-start gap-4">
-                  <span className="flex size-10 shrink-0 items-center justify-center rounded-md border border-zinc-700 bg-zinc-950 text-zinc-300">
+                  <span className="flex size-10 shrink-0 items-center justify-center rounded-md border border-zinc-200 bg-zinc-50 text-zinc-700 dark:border-zinc-700 dark:bg-zinc-950 dark:text-zinc-300">
                     <Icon className="size-5" aria-hidden />
                   </span>
                   <div>
-                    <h3 className="font-medium text-zinc-100">
+                    <h3 className="font-medium text-zinc-900 dark:text-zinc-100">
                       {t(`items.${key}.title`)}
                     </h3>
-                    <p className="mt-1 text-sm leading-relaxed text-zinc-500">
+                    <p className="mt-1 text-sm leading-relaxed text-zinc-600 dark:text-zinc-500">
                       {t(`items.${key}.desc`)}
                     </p>
                   </div>
