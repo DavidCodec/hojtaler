@@ -70,6 +70,7 @@
     "title": "Commercial contact",
     "intro": "Send your inquiry by email or message us on WhatsApp. An advisor will review your project and respond with the right technical and commercial proposal.",
     "emailLabel": "Email:",
+    "whatsappLabel": "WhatsApp:",
     "whatsapp": "WhatsApp",
     "whatsappPrefill": "Hello, I would like to speak with a HOJTALER advisor.",
     "form": {
@@ -106,7 +107,6 @@
   },
   "footer": {
     "tagline": "Wholesale distribution and representation of professional audio for Venezuela and Latin America. No retail sales.",
-    "whatsapp": "WhatsApp",
     "rights": "© {year} {name}. All rights reserved."
   }
 }

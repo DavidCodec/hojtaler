@@ -70,6 +70,7 @@
     "title": "Contacto comercial",
     "intro": "Envía tu consulta por correo o escríbenos por WhatsApp. Un asesor revisará tu proyecto y te responderá con la propuesta técnica y comercial adecuada.",
     "emailLabel": "Correo:",
+    "whatsappLabel": "WhatsApp:",
     "whatsapp": "WhatsApp",
     "whatsappPrefill": "Hola, quiero hablar con un asesor de HOJTALER.",
     "form": {
@@ -106,7 +107,6 @@
   },
   "footer": {
     "tagline": "Distribución y representación mayorista de audio profesional para Venezuela y Latinoamérica. Sin venta retail.",
-    "whatsapp": "WhatsApp",
     "rights": "© {year} {name}. Todos los derechos reservados."
   }
 }

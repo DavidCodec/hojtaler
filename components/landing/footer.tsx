@@ -6,6 +6,7 @@ import { SITE, whatsappHref } from "@/lib/site-config";
 
 export function Footer() {
   const t = useTranslations("footer");
+  const tc = useTranslations("contact");
   const year = new Date().getFullYear();
 
   return (
@@ -26,20 +27,26 @@ export function Footer() {
           </p>
         </div>
         <div className="flex flex-col gap-3 text-sm text-zinc-400">
-          <a
-            href={`mailto:${SITE.contactEmail}`}
-            className="hover:text-zinc-200"
-          >
-            {SITE.contactEmail}
-          </a>
-          <a
-            href={whatsappHref()}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-zinc-200"
-          >
-            {t("whatsapp")}
-          </a>
+          <p>
+            <span className="text-zinc-500">{tc("emailLabel")} </span>
+            <a
+              href={`mailto:${SITE.contactEmail}`}
+              className="text-zinc-200 underline-offset-4 hover:text-white hover:underline"
+            >
+              {SITE.contactEmail}
+            </a>
+          </p>
+          <p>
+            <span className="text-zinc-500">{tc("whatsappLabel")} </span>
+            <a
+              href={whatsappHref()}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-zinc-200 underline-offset-4 hover:text-white hover:underline"
+            >
+              {SITE.whatsappDisplay}
+            </a>
+          </p>
         </div>
       </div>
       <p className="mx-auto mt-10 max-w-6xl px-4 text-xs text-zinc-600 sm:px-6">

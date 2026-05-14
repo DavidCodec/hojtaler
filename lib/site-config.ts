@@ -4,6 +4,8 @@ export const SITE = {
   contactEmail: "contacto@hojtaler.com",
   /** Solo dígitos, sin + (ej. Venezuela 58 + número). */
   whatsappE164: "584000000000",
+  /** Número tal como se muestra en la web (debe coincidir con whatsappE164). */
+  whatsappDisplay: "+58 400 000 0000",
   brands: [
     "JBL",
     "AKG",

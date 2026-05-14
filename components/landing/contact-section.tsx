@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MessageSquare, Send } from "lucide-react";
+import { Send } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { FormEvent, useId, useMemo, useState } from "react";
 import {
@@ -99,15 +99,17 @@ export function ContactSection() {
                 {SITE.contactEmail}
               </a>
             </p>
-            <a
-              href={whatsappHref(t("whatsappPrefill"))}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-md border border-zinc-600 px-4 py-2.5 text-sm font-medium text-zinc-100 transition-colors hover:border-zinc-400 hover:bg-zinc-800/60"
-            >
-              <MessageSquare className="size-4" aria-hidden />
-              {t("whatsapp")}
-            </a>
+            <p>
+              <span className="text-zinc-500">{t("whatsappLabel")} </span>
+              <a
+                href={whatsappHref(t("whatsappPrefill"))}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-zinc-200 underline-offset-4 hover:text-white hover:underline"
+              >
+                {SITE.whatsappDisplay}
+              </a>
+            </p>
           </div>
         </motion.div>
 
