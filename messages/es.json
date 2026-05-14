@@ -1,0 +1,112 @@
+{
+  "metadata": {
+    "title": "HOJTALER — Distribución de audio profesional",
+    "description": "Distribuidor mayorista para Suramérica de marcas líderes en audio profesional. Asesoría técnica, integración y soporte para integradores e instaladores."
+  },
+  "nav": {
+    "brands": "Marcas",
+    "solutions": "Soluciones",
+    "contact": "Contacto"
+  },
+  "header": {
+    "ctaAdvisor": "Hablar con un asesor",
+    "menuOpen": "Abrir menú",
+    "menuClose": "Cerrar menú"
+  },
+  "localeSwitcher": {
+    "label": "Idioma",
+    "es": "Español",
+    "en": "English",
+    "open": "Elegir idioma",
+    "current": "Idioma actual"
+  },
+  "hero": {
+    "badge": "Audio profesional · B2B",
+    "title": "Distribuidor mayorista para Suramérica de marcas líderes en audio profesional",
+    "lead": "Hojtaler distribuye y representa soluciones de audio profesional para integradores, instaladores, productoras, iglesias, comercios y proyectos corporativos. Asesoría técnica, diseño de sistemas y soporte postventa con respaldo experto.",
+    "ctaPrimary": "Hablar con un asesor",
+    "ctaSecondary": "Conocer marcas",
+    "imageAlt": "Consola de mezcla profesional"
+  },
+  "brands": {
+    "title": "Marcas representadas",
+    "footnote": "Portafolio en evolución según proyectos y regiones. Consulta disponibilidad y líneas específicas con nuestro equipo comercial."
+  },
+  "solutions": {
+    "title": "Soluciones para tu proyecto",
+    "lead": "Acompañamos desde el dimensionamiento hasta el soporte postventa, con criterio técnico-comercial y foco en resultados medibles en cada aplicación.",
+    "items": {
+      "fixed": {
+        "title": "Instalación fija",
+        "desc": "Sistemas permanentes con integración limpia y fiabilidad a largo plazo."
+      },
+      "live": {
+        "title": "Eventos en vivo",
+        "desc": "Rider, potencia y mezcla para escenarios exigentes y cambios rápidos."
+      },
+      "church": {
+        "title": "Iglesias",
+        "desc": "Claridad vocal, control de feedback y soluciones escalables por campus."
+      },
+      "retail": {
+        "title": "Comercios",
+        "desc": "Sonido de ambiente y mensajería coherente con la marca del espacio."
+      },
+      "hotel": {
+        "title": "Hoteles",
+        "desc": "Zonas comunes, salones y experiencia de huésped con estándar uniforme."
+      },
+      "conference": {
+        "title": "Salas de conferencia",
+        "desc": "Videoconferencia, refuerzo de voz y acústica alineada al entorno corporativo."
+      },
+      "venues": {
+        "title": "Entretenimiento y venues",
+        "desc": "Venues medianos y grandes con enfoque en impacto y control del sistema."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contacto comercial",
+    "intro": "Envía tu consulta por correo o escríbenos por WhatsApp. Un asesor revisará tu proyecto y te responderá con la propuesta técnica y comercial adecuada.",
+    "emailLabel": "Correo:",
+    "whatsapp": "WhatsApp",
+    "whatsappPrefill": "Hola, quiero hablar con un asesor de HOJTALER.",
+    "form": {
+      "name": "Nombre",
+      "company": "Empresa",
+      "email": "Correo",
+      "phone": "Teléfono",
+      "location": "Ciudad / País",
+      "brand": "Marca de interés",
+      "message": "Mensaje",
+      "marcaPlaceholder": "Ej. elige JBL, Crown… (opcional)",
+      "marcaVarias": "Varias / a definir",
+      "submit": "Enviar por correo",
+      "hintAfter": "Si no se abrió tu cliente de correo, usa el enlace de arriba o WhatsApp.",
+      "hintBefore": "Se abrirá tu aplicación de correo con el mensaje listo para enviar.",
+      "placeholders": {
+        "name": "Ej. María González",
+        "company": "Ej. Instalaciones Audio Sur, C.A.",
+        "email": "contacto@tuempresa.com",
+        "phone": "Ej. +58 412 000 0000",
+        "location": "Ej. Caracas, Venezuela",
+        "message": "Describe tu proyecto: tipo de instalación, plazos, presupuesto orientativo, líneas o equipos de interés…"
+      },
+      "mail": {
+        "subject": "Consulta web — {company}",
+        "name": "Nombre",
+        "company": "Empresa",
+        "email": "Correo",
+        "phone": "Teléfono",
+        "location": "Ciudad / País",
+        "brand": "Marca de interés"
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Distribución y representación mayorista de audio profesional para Venezuela y Latinoamérica. Sin venta retail.",
+    "whatsapp": "WhatsApp",
+    "rights": "© {year} {name}. Todos los derechos reservados."
+  }
+}

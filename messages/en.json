@@ -1,0 +1,112 @@
+{
+  "metadata": {
+    "title": "HOJTALER — Professional audio distribution",
+    "description": "Wholesale distributor for South America representing leading professional audio brands. Technical consulting, system integration, and installer-focused support."
+  },
+  "nav": {
+    "brands": "Brands",
+    "solutions": "Solutions",
+    "contact": "Contact"
+  },
+  "header": {
+    "ctaAdvisor": "Speak with an advisor",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu"
+  },
+  "localeSwitcher": {
+    "label": "Language",
+    "es": "Español",
+    "en": "English",
+    "open": "Choose language",
+    "current": "Current language"
+  },
+  "hero": {
+    "badge": "Professional audio · B2B",
+    "title": "Wholesale distributor for South America representing leading professional audio brands",
+    "lead": "Hojtaler distributes and represents professional audio solutions for integrators, installers, production companies, churches, retail, and corporate projects. Technical consulting, system design, and post-sales support backed by an expert team.",
+    "ctaPrimary": "Speak with an advisor",
+    "ctaSecondary": "Explore brands",
+    "imageAlt": "Professional mixing console"
+  },
+  "brands": {
+    "title": "Represented brands",
+    "footnote": "Our portfolio evolves by project and region. Ask our sales team about availability and specific product lines."
+  },
+  "solutions": {
+    "title": "Solutions for your project",
+    "lead": "We support you from sizing through post-sales, with a technical–commercial mindset and measurable outcomes for every application.",
+    "items": {
+      "fixed": {
+        "title": "Fixed installation",
+        "desc": "Permanent systems with clean integration and long-term reliability."
+      },
+      "live": {
+        "title": "Live events",
+        "desc": "Riders, power, and mixing for demanding stages and fast turnarounds."
+      },
+      "church": {
+        "title": "Houses of worship",
+        "desc": "Vocal clarity, feedback control, and scalable multi-campus solutions."
+      },
+      "retail": {
+        "title": "Retail",
+        "desc": "Ambient audio and messaging aligned with the brand experience in the space."
+      },
+      "hotel": {
+        "title": "Hospitality",
+        "desc": "Public areas, ballrooms, and a consistent guest experience."
+      },
+      "conference": {
+        "title": "Conference rooms",
+        "desc": "Video conferencing, speech reinforcement, and acoustics suited to corporate environments."
+      },
+      "venues": {
+        "title": "Entertainment & venues",
+        "desc": "Mid-size and large venues focused on impact and system control."
+      }
+    }
+  },
+  "contact": {
+    "title": "Commercial contact",
+    "intro": "Send your inquiry by email or message us on WhatsApp. An advisor will review your project and respond with the right technical and commercial proposal.",
+    "emailLabel": "Email:",
+    "whatsapp": "WhatsApp",
+    "whatsappPrefill": "Hello, I would like to speak with a HOJTALER advisor.",
+    "form": {
+      "name": "Name",
+      "company": "Company",
+      "email": "Email",
+      "phone": "Phone",
+      "location": "City / Country",
+      "brand": "Brand of interest",
+      "message": "Message",
+      "marcaPlaceholder": "e.g. choose JBL, Crown… (optional)",
+      "marcaVarias": "Several / to be defined",
+      "submit": "Send via email",
+      "hintAfter": "If your email client did not open, use the link above or WhatsApp.",
+      "hintBefore": "Your email app will open with the message ready to send.",
+      "placeholders": {
+        "name": "e.g. Jane Smith",
+        "company": "e.g. Pro Audio Integrations LLC",
+        "email": "contact@yourcompany.com",
+        "phone": "e.g. +1 305 000 0000",
+        "location": "e.g. Miami, United States",
+        "message": "Describe your project: installation type, timelines, indicative budget, lines or equipment of interest…"
+      },
+      "mail": {
+        "subject": "Website inquiry — {company}",
+        "name": "Name",
+        "company": "Company",
+        "email": "Email",
+        "phone": "Phone",
+        "location": "City / Country",
+        "brand": "Brand of interest"
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Wholesale distribution and representation of professional audio for Venezuela and Latin America. No retail sales.",
+    "whatsapp": "WhatsApp",
+    "rights": "© {year} {name}. All rights reserved."
+  }
+}
