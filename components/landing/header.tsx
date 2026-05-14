@@ -45,14 +45,16 @@ export function Header() {
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-3 px-4 sm:px-6">
         <Link href="/" className="flex min-w-0 items-center gap-3">
-          <Image
-            src="/LOGO%20HOJTALER.jpg"
-            alt={SITE.name}
-            width={40}
-            height={40}
-            className="h-9 w-9 shrink-0 rounded-md object-contain dark:brightness-0 dark:invert"
-            priority
-          />
+          <span className="inline-flex shrink-0">
+            <Image
+              src="/LOGO%20HOJTALER.jpg"
+              alt={SITE.name}
+              width={40}
+              height={40}
+              className="h-9 w-9 shrink-0 rounded object-contain"
+              priority
+            />
+          </span>
           <span className="hidden truncate text-sm font-medium tracking-[0.18em] text-zinc-600 dark:text-zinc-400 sm:inline">
             {SITE.name}
           </span>
